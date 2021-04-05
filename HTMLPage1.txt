@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>Form Example</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script LANGUAGE="JavaScript" type="text/javascript">
+        function display() {
+
+            message = "<li><b>Id: </b>" + document.form1.id.value;
+            message += "<li><b>Name: </b>" + document.form1.yourname.value;
+            message += "<li><b>Address: </b>" + document.form1.address.value;
+            message += "<li><b>Batch: </b>" + document.form1.batch.value ;
+            document.write(message);
+        }
+    </script>
+</head>
+<body>
+    <h2>Details</h2>
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <form name="form1">
+                    <div class="form-group">
+                        <b>Id:</b> <input TYPE="number" class="form-control"  NAME="id">
+
+                    </div>
+                    <div class="form-group">
+
+                        <b>Name:</b> <input TYPE="TEXT" class="form-control"  NAME="yourname">
+
+                    </div>
+                    <div class="form-group">
+                        <b>Address:</b> <input TYPE="TEXT" class="form-control"  NAME="address">
+
+                    </div>
+                    <div class="form-group">
+                        <b>Batch: </b> <input TYPE="TEXT" class="form-control"  NAME="batch">
+
+                    </div>
+                    <p><input TYPE="BUTTON" VALUE="Display" onClick="display();"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
